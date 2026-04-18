@@ -29,7 +29,7 @@ body {
 
 .presentation {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("../img/the-batman-2022-movies-dc-comics-red-background-3840x2160-6775.jpg");
-  background-size: 100%;
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+    url("../img/batman-suit.jpg");
+    background-size: 100% 100%;
 }
