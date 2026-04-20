@@ -35,8 +35,12 @@ body {
   z-index: 2;
 }
 
-.hero {
+.hero,
+.interlude {
   width: 100vw;
+}
+
+.hero {
   height: 100vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
@@ -98,4 +102,11 @@ body {
 
 .hero_title {
   font-size: 50px;
+}
+
+.interlude {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400vh;
 }
