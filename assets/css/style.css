@@ -36,12 +36,17 @@ body {
 }
 
 .hero,
-.interlude {
+.interlude,
+.presentation {
   width: 100vw;
 }
 
-.hero {
+.hero,
+.presentation {
   height: 100vh;
+}
+
+.hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
     url("../img/batman-suit.jpg");
@@ -110,3 +115,43 @@ body {
   justify-content: center;
   height: 400vh;
 }
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation-content {
+  display: flex;
+  width: 85vw;
+  height: 75vh;
+  margin-top: 25px;
+  border: 1px solid #ee041e;
+}
+
+.presentation-content-img {
+  width: 50%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, #000000, transparent 20%),
+    linear-gradient(to left, #000000, transparent 20%),
+    url("../img/batman-in-dark.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.presentation-content-text {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 80px;
+  color: #c4c4c4;
+  letter-spacing: 20%;
+}
+
+.presentation-content-text span{
+  color: white;
+}
+
