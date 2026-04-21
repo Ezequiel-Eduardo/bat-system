@@ -71,11 +71,43 @@
         </ul>
       </div>
       <div class="presentation-content second">
-        <video src="assets/video/The Batman - Metro Fight Scene [4K](1080P_HD).mp4" controls></video>
-        <div class="presentation-content-card first"></div>
-        <div class="presentation-content-card second"></div>
-        <div class="presentation-content-card third"></div>
+        <video
+          src="assets/video/The Batman - Metro Fight Scene [4K](1080P_HD).mp4"
+          controls
+          id="video"
+        ></video>
+        <div class="presentation-content-card first" id="presentationCard1"></div>
+        <div class="presentation-content-card second" id="presentationCard2"></div>
+        <div class="presentation-content-card third" id="presentationCard3"></div>
       </div>
     </div>
   </body>
 </html>
+<script>
+  let videoHTML = document.getElementById('video');
+
+  videoHTML.addEventListener('click', function(){
+    if (cardExibido) {
+      assistir();
+      cardExibido = false;
+    } else {
+      pausar();
+    }
+    
+  });
+
+  let cardExibido = true;
+
+  function assistir() {
+    presentationCard1.style.display = "none";
+    presentationCard2.style.display = "none";
+    presentationCard3.style.display = "none";
+  }
+
+  function pausar() {
+    presentationCard1.style.display = "block";
+    presentationCard2.style.display = "block";
+    presentationCard3.style.display = "block";
+    cardExibido = true;
+  }
+</script>

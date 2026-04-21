@@ -153,6 +153,10 @@ body {
   margin-bottom: 30px;
 }
 
+.presentation-content-card:hover {
+  cursor: pointer;
+}
+
 .presentation-content-card.first {
   bottom: 0px;
   left: 85px;
