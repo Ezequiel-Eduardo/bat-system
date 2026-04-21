@@ -48,10 +48,7 @@ body {
 }
 
 .interlude {
-  height: 400vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
 }
 
 .hero {
@@ -152,5 +149,5 @@ body {
 }
 
 .presentation-content-text span {
-  color: white;
+  color: #ee041e;
 }
