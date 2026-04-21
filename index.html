@@ -73,9 +73,9 @@
       <div class="presentation-content second">
         <video id="player" controls
         ><source id="source" src="assets/video/luta-metro.mp4" type="video/mp4"></video>
-        <div class="presentation-content-card first" id="presentationCard1"></div>
-        <div class="presentation-content-card second" id="presentationCard2"></div>
-        <div class="presentation-content-card third" id="presentationCard3"></div>
+        <div class="presentation-content-card first" id="presentationCard1" onclick="assistirVideo2()"></div>
+        <div class="presentation-content-card second" id="presentationCard2" onclick="assistirVideo3()"></div>
+        <div class="presentation-content-card third" id="presentationCard3" onclick="assistirVideo4()"></div>
       </div>
     </div>
   </body>
@@ -105,5 +105,38 @@
     presentationCard2.style.display = "block";
     presentationCard3.style.display = "block";
     cardExibido = true;
+  }
+
+  function assistirVideo2() {
+    let source = document.getElementById('source');
+
+    source.src = `assets/video/nirvana-edit.mp4`;
+    
+    playerHTML.load();
+    playerHTML.play();
+    assistir();
+    cardExibido = false;
+  }
+
+  function assistirVideo3() {
+    let source = document.getElementById('source');
+
+    source.src = `assets/video/cena-medo.mp4`;
+    
+    playerHTML.load();
+    playerHTML.play();
+    assistir();
+    cardExibido = false;
+  }
+
+  function assistirVideo4() {
+    let source = document.getElementById('source');
+
+    source.src = `assets/video/luta-escuro.mp4`;
+    
+    playerHTML.load();
+    playerHTML.play();
+    assistir();
+    cardExibido = false;
   }
 </script>
