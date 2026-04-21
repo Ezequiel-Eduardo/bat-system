@@ -132,8 +132,8 @@ body {
 }
 
 .presentation-content.second {
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: flex-end;
   border: 1px solid #ee041e;
@@ -147,10 +147,9 @@ body {
 
 .presentation-content-card {
   position: absolute;
-  height: 34%;
   width: 25%;
+  height: 34%;
   border: 1px solid #ee041e;
-  background-color: black;
   margin-bottom: 30px;
 }
 
