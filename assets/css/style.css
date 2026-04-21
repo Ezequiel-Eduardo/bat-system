@@ -128,14 +128,15 @@ body {
   width: 85%;
   height: 75vh;
   margin-top: 25px;
-  border: 1px solid #ee041e;
 }
 
 .presentation-content-img {
   width: 50%;
   background-image:
-    linear-gradient(to right, #000000, transparent 20%),
-    linear-gradient(to left, #000000, transparent 20%),
+    linear-gradient(to top, #000000, transparent 20%),
+    linear-gradient(to right, #000000, transparent 25%),
+    linear-gradient(to bottom, #000000, transparent 20%),
+    linear-gradient(to left, #000000, transparent 25%),
     url("../img/batman-in-dark.jpeg");
   background-size: cover;
   background-position: center;
