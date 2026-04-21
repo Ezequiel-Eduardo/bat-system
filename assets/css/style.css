@@ -23,11 +23,6 @@ body {
   top: 0;
 }
 
-.banner img {
-  width: 100%;
-  height: 100%;
-}
-
 .banner {
   z-index: 1;
 }
@@ -36,10 +31,15 @@ body {
   z-index: 2;
 }
 
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
 .hero,
 .interlude,
 .presentation {
-  width: 100vw;
+  width: 100%;
 }
 
 .hero,
@@ -47,27 +47,35 @@ body {
   height: 100vh;
 }
 
+.interlude {
+  height: 400vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
     url("../img/batman-suit.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 85vw;
-  height: 12vh;
+  width: 85%;
+  height: 20vh;
   margin: 0 auto;
   padding-top: 25px;
   border-bottom: 2px solid #ee041e;
 }
 
 .navbar-logo {
-  width: 20%;
   height: 100%;
+  width: auto;
 }
 
 .navbar-logo img {
@@ -91,30 +99,22 @@ body {
   font-weight: 900;
 }
 
-.hero_content {
+.hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 60%;
 }
 
-.hero_title,
-.hero_subtitle {
+.hero-title,
+.hero-subtitle {
   color: white;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
 }
 
-.hero_title {
+.hero-title {
   font-size: 50px;
-}
-
-.interlude {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400vh;
 }
 
 .presentation {
@@ -125,7 +125,7 @@ body {
 
 .presentation-content {
   display: flex;
-  width: 85vw;
+  width: 85%;
   height: 75vh;
   margin-top: 25px;
   border: 1px solid #ee041e;
@@ -133,7 +133,6 @@ body {
 
 .presentation-content-img {
   width: 50%;
-  height: 100%;
   background-image:
     linear-gradient(to right, #000000, transparent 20%),
     linear-gradient(to left, #000000, transparent 20%),
@@ -143,16 +142,14 @@ body {
 }
 
 .presentation-content-text {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   width: 50%;
   padding: 80px;
   color: #c4c4c4;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
 }
 
-.presentation-content-text span{
+.presentation-content-text span {
   color: white;
 }
-
