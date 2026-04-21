@@ -147,31 +147,30 @@ body {
 
 .presentation-content-card {
   position: absolute;
-  width: 25%;
+  width: 28%;
   height: 34%;
   border: 1px solid #ee041e;
   margin-bottom: 30px;
 }
 
-.presentation-content-card.first{
+.presentation-content-card.first {
   bottom: 0px;
-  left: 135px;
-  background-image: url('https://rollingstone.com.br/wp-content/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png');
-  background-size: 100%;
-  background-position: center;
-
-}
-
-.presentation-content-card.second{
-  background-image: url('https://rollingstone.com.br/wp-content/uploads/2025/08/the-batman-2-com-robert-pattinson-ganha-previsao-para-inicio-de-filmagens.jpg');
+  left: 85px;
+  background-image: url("https://rollingstone.com.br/wp-content/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png");
   background-size: 100%;
   background-position: center;
 }
 
-.presentation-content-card.third{
+.presentation-content-card.second {
+  background-image: url("https://rollingstone.com.br/wp-content/uploads/2025/08/the-batman-2-com-robert-pattinson-ganha-previsao-para-inicio-de-filmagens.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.presentation-content-card.third {
   bottom: 0;
-  right: 135px;
-  background-image: url('../img/batman-in-rain.jpg');
+  right: 85px;
+  background-image: url("../img/batman-in-rain.jpg");
   background-size: 100%;
   background-position: center;
 }
