@@ -102,6 +102,8 @@
 
   let cardExibido = true;
 
+  let capas = [];
+
   playerHTML.addEventListener("click", function () {
     if (cardExibido) {
       assistir();
@@ -124,6 +126,26 @@
     cardExibido = true;
   }
 
+  function assistirVideo1() {
+    let source = document.getElementById("source");
+
+    source.src = `assets/video/luta-metro.mp4`;
+
+    playerHTML.load();
+    playerHTML.play();
+    assistir();
+    cardExibido = false;
+
+    capas = [
+      "https://rollingstone.com.br/wp-content/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png",
+      "https://static3.srcdn.com/wordpress/wp-content/uploads/2021/10/Robert-Pattinson-as-The-Batman-1.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5",
+      "https://preview.redd.it/who-did-it-better-v0-78n0ge8kih1e1.jpg?width=640&crop=smart&auto=webp&s=8e8042bb64c02faadca681bc7b5f55f15f0e9a66",
+    ];
+    mudarCapas();
+
+    mudarLinks(1);
+  }
+
   function assistirVideo2() {
     let source = document.getElementById("source");
 
@@ -133,6 +155,15 @@
     playerHTML.play();
     assistir();
     cardExibido = false;
+
+    capas = [
+      "https://i.ytimg.com/vi/u00QVr6jMhI/hqdefault.jpg",
+      "https://static3.srcdn.com/wordpress/wp-content/uploads/2021/10/Robert-Pattinson-as-The-Batman-1.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5",
+      "https://preview.redd.it/who-did-it-better-v0-78n0ge8kih1e1.jpg?width=640&crop=smart&auto=webp&s=8e8042bb64c02faadca681bc7b5f55f15f0e9a66",
+    ];
+    mudarCapas();
+
+    mudarLinks(2);
   }
 
   function assistirVideo3() {
@@ -144,6 +175,15 @@
     playerHTML.play();
     assistir();
     cardExibido = false;
+
+    capas = [
+      "https://i.ytimg.com/vi/u00QVr6jMhI/hqdefault.jpg",
+      "https://rollingstone.com.br/wp-content/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png",
+      "https://preview.redd.it/who-did-it-better-v0-78n0ge8kih1e1.jpg?width=640&crop=smart&auto=webp&s=8e8042bb64c02faadca681bc7b5f55f15f0e9a66",
+    ];
+    mudarCapas();
+
+    mudarLinks(3);
   }
 
   function assistirVideo4() {
@@ -155,5 +195,66 @@
     playerHTML.play();
     assistir();
     cardExibido = false;
+
+    capas = [
+      "https://i.ytimg.com/vi/u00QVr6jMhI/hqdefault.jpg",
+      "https://rollingstone.com.br/wp-content/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png",
+      "https://static3.srcdn.com/wordpress/wp-content/uploads/2021/10/Robert-Pattinson-as-The-Batman-1.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5",
+    ];
+    mudarCapas();
+
+    mudarLinks(4);
+  }
+
+  function mudarCapas() {
+    presentationCard1.style.backgroundImage = `url(${capas[0]})`;
+    presentationCard2.style.backgroundImage = `url(${capas[1]})`;
+    presentationCard3.style.backgroundImage = `url(${capas[2]})`;
+  }
+
+  function mudarLinks(ordem) {
+    if (ordem === 4) {
+      presentationCard1.onclick = function () {
+        assistirVideo1();
+      };
+      presentationCard2.onclick = function () {
+        assistirVideo2();
+      };
+      presentationCard3.onclick = function () {
+        assistirVideo3();
+      };
+    } else if (ordem === 3) {
+      presentationCard1.onclick = function () {
+        assistirVideo1();
+      };
+      presentationCard2.onclick = function () {
+        assistirVideo2();
+      };
+      presentationCard3.onclick = function () {
+        assistirVideo4();
+      };
+    } else if (ordem === 2) {
+      presentationCard1.onclick = function () {
+        assistirVideo1();
+      };
+      presentationCard2.onclick = function () {
+        assistirVideo3();
+      };
+      presentationCard3.onclick = function () {
+        assistirVideo4();
+      };
+    } else if (ordem === 1) {
+      console.log("teste");
+      presentationCard1.onclick = function () {
+        assistirVideo2();
+      };
+      presentationCard2.onclick = function () {
+        assistirVideo3();
+      };
+      presentationCard3.onclick = function () {
+        assistirVideo4();
+      };
+    }
+  }
   }
 </script>
