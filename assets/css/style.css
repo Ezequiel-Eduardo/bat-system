@@ -18,10 +18,17 @@ body {
   height: 100%;
 }
 
-.hero,
-.interlude,
-.presentation {
-  width: 100%;
+.icon-back {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  background-image: url("https://www.pngall.com/wp-content/uploads/15/Batman-Symbol-No-Background.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .hero,

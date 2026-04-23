@@ -10,6 +10,7 @@
     <div class="banner">
       <img src="assets/img/the-batman-logo.png" />
     </div>
+    <div class="icon-back" onclick="voltarTopo()"></div>
     <div class="hero">
       <div class="navbar">
         <div class="navbar-logo">
@@ -230,5 +231,8 @@
       };
     }
   }
+  function voltarTopo() {
+    hero = document.querySelector(".hero");
+    hero.scrollIntoView({ behavior: "smooth" });
   }
 </script>
