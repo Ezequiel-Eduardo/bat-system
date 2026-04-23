@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html,
@@ -108,8 +109,8 @@ body {
 
 .presentation-content {
   display: flex;
-  width: 85%;
-  height: 75vh;
+  width: 80vw;
+  height: 80vh;
   margin-top: 25px;
 }
 
@@ -158,30 +159,27 @@ body {
   height: 34%;
   border: 1px solid #ee041e;
   margin-bottom: 30px;
-}
-
-.presentation-content-card:hover {
   cursor: pointer;
 }
 
 .presentation-content-card.first {
   bottom: 0px;
-  left: 85px;
+  left: 80px;
   background-image: url("https://rollingstone.com.br/wp-content/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
 .presentation-content-card.second {
   background-image: url("https://static3.srcdn.com/wordpress/wp-content/uploads/2021/10/Robert-Pattinson-as-The-Batman-1.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
 .presentation-content-card.third {
   bottom: 0;
-  right: 85px;
+  right: 80px;
   background-image: url("https://preview.redd.it/who-did-it-better-v0-78n0ge8kih1e1.jpg?width=640&crop=smart&auto=webp&s=8e8042bb64c02faadca681bc7b5f55f15f0e9a66");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
