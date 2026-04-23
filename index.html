@@ -231,6 +231,24 @@
       };
     }
   }
+
+  let iconBack = document.querySelector(".icon-back");
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 800 ||
+      document.documentElement.scrollTop > 800
+    ) {
+      iconBack.style.display = "block";
+    } else {
+      iconBack.style.display = "none";
+    }
+  }
+
   function voltarTopo() {
     hero = document.querySelector(".hero");
     hero.scrollIntoView({ behavior: "smooth" });
