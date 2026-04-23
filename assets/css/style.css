@@ -60,6 +60,7 @@ body {
 .navbar-logo {
   height: 100%;
   width: auto;
+  overflow-y: hidden;
 }
 
 .navbar-logo img {
