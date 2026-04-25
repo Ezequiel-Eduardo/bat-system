@@ -94,7 +94,7 @@ body {
 
 .hero-title,
 .hero-subtitle {
-  color: white;
+  color: #ffffff;
   letter-spacing: 0.2em;
 }
 
@@ -140,7 +140,8 @@ body {
   color: #ee041e;
 }
 
-.presentation-content.second {
+.presentation-content.second,
+.presentation-content.third {
   position: relative;
   display: flex;
   justify-content: center;
@@ -183,4 +184,71 @@ body {
   background-image: url("https://preview.redd.it/who-did-it-better-v0-78n0ge8kih1e1.jpg?width=640&crop=smart&auto=webp&s=8e8042bb64c02faadca681bc7b5f55f15f0e9a66");
   background-size: cover;
   background-position: center;
+}
+
+.presentation-content.third {
+  padding: 40px;
+}
+
+.presentation-content-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 33.33%;
+  height: 100%;
+  margin-left: 15px;
+}
+
+.card.first {
+  margin-left: 0;
+  background-image: url("https://static.wikia.nocookie.net/the-batman-universe/images/8/89/Carmine_Falcone_HD.png/revision/latest?cb=20220305020228");
+}
+
+.card.second {
+  background-image: url("https://static.wikia.nocookie.net/the-batman-universe/images/2/29/Riddler_promo_-_The_Batman.jpg/revision/latest/scale-to-width-down/1200?cb=20220209175817");
+}
+
+.card.third {
+  background-image: url("https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/d533b175-8865-11ee-aa6e-9587410378a2/batman-penguin.jpg");
+}
+
+.card.first,
+.card.second,
+.card.third {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card.first h3,
+.card.second h3,
+.card.third h3 {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  font-weight: 350;
+  letter-spacing: 15%;
+  color: #c4c4c4;
+  font-size: 24px;
+  padding-bottom: 12px;
+  overflow-y: hidden;
+}
+
+.card.first span,
+.card.second span,
+.card.third span {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+.card.first:hover,
+.card.second:hover,
+.card.third:hover{
+  transform: scale(0.98);
 }
