@@ -61,5 +61,13 @@ function voltarTopo() {
 }
 
 function paginaSobreCharada() {
-  window.location = 'about-riddler.html';
+  window.location = "about-riddler.html";
+}
+
+function paginaSobrePinguim() {
+  window.location = "about-penguin.html";
+}
+
+function paginaSobreFalcone() {
+  window.location = "about-falcone.html";
 }

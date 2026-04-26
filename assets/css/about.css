@@ -37,6 +37,16 @@ body {
   background-size: cover;
 }
 
+.side-banner.second {
+  background-image: url("https://4kwallpapers.com/images/wallpapers/the-penguin-colin-2160x3840-18162.jpg");
+  background-position: center;
+}
+
+.side-banner.third {
+  background-image: url("https://images3.alphacoders.com/121/1212792.jpg");
+  background-position: right;
+}
+
 h1 {
   color: #ee041e;
   font-size: 48px;
@@ -88,6 +98,14 @@ img {
   background-position: center;
   background-size: cover;
   cursor: pointer;
+}
+
+.card-image.second {
+  background-image: url("https://comandogeek.com.br/blog/wp-content/uploads/2024/10/The-Penguin-Episode-5-Brings-Back-A-Pivotal-Character-From-The-Batman-1024x536.png");
+}
+
+.card-image.third {
+  background-image: url("https://comicbook.com/wp-content/uploads/sites/4/2024/10/The-Batman-John-Turturro-The-Penguin-Carmine-Falcone.png?resize=2000,1125");
 }
 
 .card-image:hover {
