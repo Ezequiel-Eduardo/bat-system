@@ -200,6 +200,7 @@ body {
   width: 33.33%;
   height: 100%;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .card.first {

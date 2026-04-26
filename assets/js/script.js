@@ -59,3 +59,7 @@ function voltarTopo() {
   hero = document.querySelector(".hero");
   hero.scrollIntoView({ behavior: "smooth" });
 }
+
+function paginaSobreCharada() {
+  window.location = 'about-riddler.html';
+}
