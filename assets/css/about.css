@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Open Sans";
+  background-color: black;
+}
+
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 150vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  padding-left: 100px;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.side-banner {
+  width: 40%;
+  background-image: url("https://wallpaperaccess.com/full/8226600.jpg");
+  background-position: 80%;
+  background-size: cover;
+}
+
+h1 {
+  color: #ee041e;
+  font-size: 48px;
+  letter-spacing: 20%;
+}
+
+.content p {
+  color: #c4c4c4;
+  width: 50%;
+  text-align: justify;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.back-link span {
+  color: #c4c4c4;
+  letter-spacing: 10%;
+}
+
+.back-link span:hover {
+  color: #ee041e;
+}
+
+img {
+  width: 40px;
+  height: 20px;
+  transform: rotate(-16deg);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 20%;
+}
+
+.card-image {
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  height: 100%;
+  background-image: url("https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/03/Who-Is-the-Riddler.jpg");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  background-color: black;
+}
+
+.card-footer p {
+  text-align: end;
+}
+
+.card-line {
+  flex: 1;
+  height: 2px;
+  background-color: #ee041e;
+  margin-right: -50px;
+}
