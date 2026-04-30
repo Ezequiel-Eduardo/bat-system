@@ -30,22 +30,10 @@ function pausar() {
   cardExibido = true;
 }
 
-function assistirVideo2() {
-  window.open("https://youtu.be/reIXndCVIjc?si=STGZfFoDN6zO5cLv", "_blank");
-}
-
-function assistirVideo3() {
-  window.open("https://youtu.be/20M1FR8piZ0?si=oR-77tBGOy6-4faQ", "_blank");
-}
-
-function assistirVideo4() {
-  window.open("https://youtu.be/rU1VXXPmjYE?si=CKcxGkTsf-QII_NV", "_blank");
-}
-
 function scrollFunction() {
   if (
-    document.body.scrollTop > 800 ||
-    document.documentElement.scrollTop > 800
+    document.body.scrollTop > 2700 ||
+    document.documentElement.scrollTop > 2700
   ) {
     iconBack.style.display = "block";
   } else {
@@ -55,19 +43,15 @@ function scrollFunction() {
 
 scrollFunction();
 
-function voltarTopo() {
-  hero = document.querySelector(".hero");
-  hero.scrollIntoView({ behavior: "smooth" });
+function trocarPagina(pagina) {
+  window.location = `${pagina}.html`;
 }
 
-function paginaSobreCharada() {
-  window.location = "about-riddler.html";
+function trocarSessao(sessao) {
+  sessao = document.getElementById(sessao);
+  sessao.scrollIntoView({ behavior: "smooth" });
 }
 
-function paginaSobrePinguim() {
-  window.location = "about-penguin.html";
-}
-
-function paginaSobreFalcone() {
-  window.location = "about-falcone.html";
+function trocarVideo(link) {
+  window.open(link, "_blank");
 }

@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" href="assets/img/flavicon.png" type="image/png" />
+    <link rel="icon" href="assets/img/the-batman-logo.png" type="image/png" />
   </head>
   <body>
+    <div class="icon-back" onclick="trocarSessao('hero')"></div>
     <div class="banner">
       <img src="assets/img/the-batman-logo.png" />
     </div>
-    <div class="icon-back" onclick="voltarTopo()"></div>
-    <div class="hero">
+    <div class="transition">
+      <div class="transition-content">
+        <div class="text">They think i'm hiding in the shadows, but...</div>
+      </div>
+    </div>
+    <div class="hero" id="hero">
       <div class="navbar">
         <div class="navbar-logo">
           <img src="assets/img/logo-navbar.png" />
         </div>
         <ul class="navbar-links">
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-          <li>Link 5</li>
+          <li onclick="trocarSessao('vinganca')">Vingança</li>
+          <li onclick="trocarSessao('medo')">Medo</li>
+          <li onclick="trocarSessao('villains')">Ódio</li>
+          <li onclick="trocarSessao('gotham')">Gotham</li>
+          <li>|</li>
+          <li>Cadastro</li>
+          <li>Login</li>
         </ul>
       </div>
       <div class="hero-content">
-        <h1 class="hero-title">GOTHAM NEEDS ME</h1>
-        <h2 class="hero-subtitle">I'll do it for them..</h2>
+        <h1 class="hero-title">I'M THE SHADOWS</h1>
+        <h2 class="hero-subtitle">I'm Vengeance</h2>
       </div>
     </div>
     <div class="presentation">
       <div class="presentation-content">
-        <div class="presentation-content-img"></div>
+        <div class="presentation-content-img" id="vinganca"></div>
         <div class="presentation-content-text">
           <p>
             <i
@@ -45,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="presentation">
+    <div class="presentation" id="medo">
       <div class="presentation-content second">
         <video id="player" controls>
           <source
@@ -57,33 +64,64 @@
         <div
           class="presentation-content-card first"
           id="presentationCard1"
-          onclick="assistirVideo2()"
+          onclick="
+            trocarVideo('https://youtu.be/reIXndCVIjc?si=STGZfFoDN6zO5cLv')
+          "
         ></div>
         <div
           class="presentation-content-card second"
           id="presentationCard2"
-          onclick="assistirVideo3()"
+          onclick="
+            trocarVideo('https://youtu.be/20M1FR8piZ0?si=oR-77tBGOy6-4faQ')
+          "
         ></div>
         <div
           class="presentation-content-card third"
           id="presentationCard3"
-          onclick="assistirVideo4()"
+          onclick="
+            trocarVideo('https://youtu.be/rU1VXXPmjYE?si=CKcxGkTsf-QII_NV')
+          "
         ></div>
       </div>
     </div>
     <div class="presentation" id="villains">
       <div class="presentation-content third">
         <div class="presentation-content-cards">
-          <div class="card first" onclick="paginaSobreFalcone()">
-            <h3>Fa<span>lco</span>ne</h3>
+          <div class="card first" onclick="trocarPagina('about-falcone')">
+            <h2>Fa<span>lco</span>ne</h2>
           </div>
-          <div class="card second" onclick="paginaSobreCharada()">
-            <h3>Ch<span>ara</span>da</h3>
+          <div class="card second" onclick="trocarPagina('about-riddler')">
+            <h2>Ch<span>ara</span>da</h2>
           </div>
-          <div class="card third" onclick="paginaSobrePinguim()">
-            <h3>Pi<span>ngu</span>im</h3>
+          <div class="card third" onclick="trocarPagina('about-penguin')">
+            <h2>Pi<span>ngu</span>im</h2>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="presentation" id="gotham">
+      <div class="presentation-content fourth">
+        <div class="image first"></div>
+        <div class="image second"></div>
+        <div class="image third"></div>
+        <div class="image fourth"></div>
+        <div class="image fifth"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-title">
+        <h2>
+          The <br />
+          batman
+        </h2>
+      </div>
+      <div class="footer-logo" onclick="trocarSessao('hero')"></div>
+      <div class="footer-links">
+        <ul>
+          <li class="git-hub"></li>
+          <li class="linkedin"></li>
+          <li class="instagram"></li>
+        </ul>
       </div>
     </div>
   </body>

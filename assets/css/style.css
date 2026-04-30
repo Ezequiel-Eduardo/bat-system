@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  list-style: none;
 }
 
 html,
@@ -19,22 +19,52 @@ body {
   height: 100%;
 }
 
+.icon-back,
+.presentation-content-card,
+.card,
+.image,
+.footer-logo,
+.git-hub,
+.linkedin,
+.instagram {
+  cursor: pointer;
+}
+
 .icon-back {
   position: fixed;
   bottom: 20px;
-  right: 10px;
-  width: 80px;
-  height: 80px;
-  background-image: url("https://www.pngall.com/wp-content/uploads/15/Batman-Symbol-No-Background.png");
-  background-size: 100%;
+  right: 0;
+  width: 125px;
+  height: 30px;
+  background-image: url("../img/bat-symbol.png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  cursor: pointer;
+  z-index: 2;
+}
+
+.transition {
+  height: 300vh;
+}
+
+.transition-content {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 16px;
+  letter-spacing: 6px;
+  color: #ee041e;
 }
 
 .hero,
 .presentation {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -59,8 +89,7 @@ body {
 
 .navbar-logo {
   height: 100%;
-  width: auto;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .navbar-logo img {
@@ -70,18 +99,13 @@ body {
 
 .navbar-links {
   display: flex;
-  list-style: none;
 }
 
 .navbar-links li {
   color: #ee041e;
   margin-left: 25px;
   margin-bottom: 5px;
-}
-
-.navbar-links li:hover {
   cursor: pointer;
-  font-weight: 900;
 }
 
 .hero-content {
@@ -94,7 +118,7 @@ body {
 
 .hero-title,
 .hero-subtitle {
-  color: #ffffff;
+  color: #fff;
   letter-spacing: 0.2em;
 }
 
@@ -143,7 +167,6 @@ body {
 .presentation-content.second,
 .presentation-content.third {
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: flex-end;
   border: 1px solid #ee041e;
@@ -161,29 +184,24 @@ body {
   height: 34%;
   border: 1px solid #ee041e;
   margin-bottom: 60px;
-  cursor: pointer;
+  background-size: cover;
+  background-position: center;
 }
 
 .presentation-content-card.first {
-  bottom: 0px;
+  bottom: 0;
   left: 80px;
-  background-image: url("https://rollingstone.com.br/wp-content/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../img/robert-eyes.jpg");
 }
 
 .presentation-content-card.second {
-  background-image: url("https://static3.srcdn.com/wordpress/wp-content/uploads/2021/10/Robert-Pattinson-as-The-Batman-1.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../img/batman-fear.jpg");
 }
 
 .presentation-content-card.third {
   bottom: 0;
   right: 80px;
-  background-image: url("https://preview.redd.it/who-did-it-better-v0-78n0ge8kih1e1.jpg?width=640&crop=smart&auto=webp&s=8e8042bb64c02faadca681bc7b5f55f15f0e9a66");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../img/batman-fight-dark.webp");
 }
 
 .presentation-content.third {
@@ -200,36 +218,27 @@ body {
   width: 33.33%;
   height: 100%;
   margin-left: 15px;
-  cursor: pointer;
-}
-
-.card.first {
-  margin-left: 0;
-  background-image: url("https://static.wikia.nocookie.net/the-batman-universe/images/8/89/Carmine_Falcone_HD.png/revision/latest?cb=20220305020228");
-}
-
-.card.second {
-  background-image: url("https://static.wikia.nocookie.net/the-batman-universe/images/2/29/Riddler_promo_-_The_Batman.jpg/revision/latest/scale-to-width-down/1200?cb=20220209175817");
-}
-
-.card.third {
-  background-image: url("https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/d533b175-8865-11ee-aa6e-9587410378a2/batman-penguin.jpg");
-}
-
-.card.first,
-.card.second,
-.card.third {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
 
-.card.first h3,
-.card.second h3,
-.card.third h3 {
+.card.first {
+  margin-left: 0;
+  background-image: url("../img/carmine-falcone.webp");
+}
+
+.card.second {
+  background-image: url("../img/riddler-promo.webp");
+}
+
+.card.third {
+  background-image: url("../img/batman-penguin.jpg");
+}
+
+.card h2 {
   width: 100%;
   background-color: black;
   text-align: center;
@@ -238,18 +247,152 @@ body {
   color: #c4c4c4;
   font-size: 24px;
   padding-bottom: 12px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
-.card.first span,
-.card.second span,
-.card.third span {
+.card span {
   padding-bottom: 10px;
   border-bottom: 2px solid #c4c4c4;
 }
 
-.card.first:hover,
-.card.second:hover,
-.card.third:hover{
+.card:hover {
   transform: scale(0.98);
+}
+
+.presentation-content.fourth {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image {
+  border: 2px solid #ee041e;
+}
+
+.image:hover {
+  transform: scale(0.98);
+}
+
+.image.first,
+.image.second,
+.image.third {
+  height: 60%;
+}
+
+.image.first {
+  width: 50%;
+  margin-right: 20px;
+  background-image: url("../img/batman-gotham-view.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image.second,
+.image.third {
+  width: 23%;
+  background-position: center;
+  background-size: cover;
+}
+
+.image.second {
+  margin-right: 20px;
+  background-image: url("../img/gotham-square.webp");
+}
+
+.image.third {
+  background-image: url("../img/bruce-walking.webp");
+  background-position: left;
+}
+
+.image.fourth,
+.image.fifth {
+  margin-top: 20px;
+  height: 40%;
+  background-size: cover;
+}
+
+.image.fourth {
+  width: 50%;
+  background-image: url("../img/bat-sinal.jpg");
+  background-position: top;
+}
+
+.image.fifth {
+  width: 48%;
+  background-image: url("../img/batman-and-catwoman.webp");
+}
+
+.footer {
+  padding: 10px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  border-top: 2px solid #ee041e;
+}
+
+.footer-title h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #c4c4c4;
+}
+
+.footer-links {
+  height: 100%;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.footer-logo {
+  margin-left: -100px;
+  width: 400px;
+  height: 100px;
+  background-image: url("../img/bat-symbol.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.git-hub,
+.linkedin,
+.instagram {
+  background-position: center;
+  background-size: cover;
+}
+
+.git-hub {
+  width: 42px;
+  height: 42px;
+  background-image: url("../img/github.png");
+}
+
+.linkedin {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/linkedin.png");
+}
+
+.instagram {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/instagram.png");
+}
+
+.instagram:hover {
+  background-image: url("../img/instagram-hover.png");
+}
+
+.git-hub:hover {
+  background-image: url("../img/github-hover.png");
+}
+
+.linkedin:hover {
+  background-image: url("../img/linkedin-hover.png");
 }
