@@ -4,10 +4,316 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vengeance</title>
+    <link rel="stylesheet" href="assets/css/about-batman.css" />
+    <link rel="icon" href="assets/img/the-batman-logo.png" type="image/png" />
   </head>
   <body>
-    <div class="hero">
+    <div class="icon-back" onclick="trocarSessao('hero')"></div>
+    <div class="hero" id="hero">
+      <div class="navbar">
+        <div class="navbar-logo" onclick="trocarPagina('index', 'hero')">
+          <img src="assets/img/logo-navbar.png" />
+        </div>
+        <ul class="navbar-links">
+          <li onclick="trocarPagina('index', 'vinganca')">Vingança</li>
+          <li onclick="trocarPagina('index', 'medo')">Medo</li>
+          <li onclick="trocarPagina('index', 'villains')">Ódio</li>
+          <li onclick="trocarPagina('index', 'gotham')">Gotham</li>
+          <li>|</li>
+          <li>Cadastro</li>
+          <li>Login</li>
+        </ul>
+      </div>
       <div class="hero-content"></div>
+    </div>
+    <div class="cards">
+      <div class="card first">
+        <div class="card-img"></div>
+        <div class="card-text">
+          <h2>Lorem Ipsum</h2>
+          <div class="p">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illo,
+              rerum earum, at consectetur reprehenderit temporibus tempore velit
+              adipisci modi eveniet dolorem laudantium quasi vero consequatur
+              quaerat nulla officiis quas. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Provident earum deserunt rerum
+              dignissimos voluptas unde explicabo tempore sint aliquam ut, quis
+              voluptatem fuga quas, dolorum expedita nihil officia. Dicta,
+              laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. In illo, rerum earum, at consectetur reprehenderit
+              temporibus tempore velit adipisci modi eveniet dolorem laudantium
+              quasi vero consequatur quaerat nulla officiis quas. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Provident earum
+              deserunt rerum dignissimos voluptas unde explicabo tempore sint
+              aliquam ut, quis voluptatem fuga quas, dolorum expedita nihil
+              officia. Dicta, laboriosam! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. In illo, rerum earum, at consectetur
+              reprehenderit temporibus tempore velit adipisci modi eveniet
+              dolorem laudantium quasi vero consequatur quaerat nulla officiis
+              quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident earum deserunt rerum dignissimos voluptas unde explicabo
+              tempore sint aliquam ut, quis voluptatem fuga quas, dolorum
+              expedita nihil officia. Dicta, laboriosam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card second">
+        <div class="card-img"></div>
+        <div class="card-text">
+          <h2>Lorem Ipsum</h2>
+          <div class="p">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illo,
+              rerum earum, at consectetur reprehenderit temporibus tempore velit
+              adipisci modi eveniet dolorem laudantium quasi vero consequatur
+              quaerat nulla officiis quas. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Provident earum deserunt rerum
+              dignissimos voluptas unde explicabo tempore sint aliquam ut, quis
+              voluptatem fuga quas, dolorum expedita nihil officia. Dicta,
+              laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. In illo, rerum earum, at consectetur reprehenderit
+              temporibus tempore velit adipisci modi eveniet dolorem laudantium
+              quasi vero consequatur quaerat nulla officiis quas. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Provident earum
+              deserunt rerum dignissimos voluptas unde explicabo tempore sint
+              aliquam ut, quis voluptatem fuga quas, dolorum expedita nihil
+              officia. Dicta, laboriosam! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. In illo, rerum earum, at consectetur
+              reprehenderit temporibus tempore velit adipisci modi eveniet
+              dolorem laudantium quasi vero consequatur quaerat nulla officiis
+              quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident earum deserunt rerum dignissimos voluptas unde explicabo
+              tempore sint aliquam ut, quis voluptatem fuga quas, dolorum
+              expedita nihil officia. Dicta, laboriosam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card third">
+        <div class="card-img"></div>
+        <div class="card-text">
+          <h2>Lorem Ipsum</h2>
+          <div class="p">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illo,
+              rerum earum, at consectetur reprehenderit temporibus tempore velit
+              adipisci modi eveniet dolorem laudantium quasi vero consequatur
+              quaerat nulla officiis quas. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Provident earum deserunt rerum
+              dignissimos voluptas unde explicabo tempore sint aliquam ut, quis
+              voluptatem fuga quas, dolorum expedita nihil officia. Dicta,
+              laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. In illo, rerum earum, at consectetur reprehenderit
+              temporibus tempore velit adipisci modi eveniet dolorem laudantium
+              quasi vero consequatur quaerat nulla officiis quas. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Provident earum
+              deserunt rerum dignissimos voluptas unde explicabo tempore sint
+              aliquam ut, quis voluptatem fuga quas, dolorum expedita nihil
+              officia. Dicta, laboriosam! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. In illo, rerum earum, at consectetur
+              reprehenderit temporibus tempore velit adipisci modi eveniet
+              dolorem laudantium quasi vero consequatur quaerat nulla officiis
+              quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident earum deserunt rerum dignissimos voluptas unde explicabo
+              tempore sint aliquam ut, quis voluptatem fuga quas, dolorum
+              expedita nihil officia. Dicta, laboriosam!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="gallery-content">
+        <div class="gallery-card first"></div>
+        <div class="gallery-card second">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            error autem ab eligendi aliquam laborum ipsum molestias. Facilis
+            voluptatem, similique est, nam porro iusto distinctio, iste impedit
+            voluptatibus nobis non.
+          </p>
+        </div>
+        <div class="gallery-card third">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            error autem ab eligendi aliquam laborum ipsum molestias. Facilis
+            voluptatem, similique est, nam porro iusto distinctio, iste impedit
+            voluptatibus nobis non.
+          </p>
+        </div>
+        <div class="gallery-card fourth"></div>
+      </div>
+    </div>
+    <div class="cards second">
+      <div class="card first">
+        <div class="card-img"></div>
+        <div class="card-text">
+          <h2>Lorem Ipsum</h2>
+          <div class="p">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illo,
+              rerum earum, at consectetur reprehenderit temporibus tempore velit
+              adipisci modi eveniet dolorem laudantium quasi vero consequatur
+              quaerat nulla officiis quas. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Provident earum deserunt rerum
+              dignissimos voluptas unde explicabo tempore sint aliquam ut, quis
+              voluptatem fuga quas, dolorum expedita nihil officia. Dicta,
+              laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. In illo, rerum earum, at consectetur reprehenderit
+              temporibus tempore velit adipisci modi eveniet dolorem laudantium
+              quasi vero consequatur quaerat nulla officiis quas. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Provident earum
+              deserunt rerum dignissimos voluptas unde explicabo tempore sint
+              aliquam ut, quis voluptatem fuga quas, dolorum expedita nihil
+              officia. Dicta, laboriosam! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. In illo, rerum earum, at consectetur
+              reprehenderit temporibus tempore velit adipisci modi eveniet
+              dolorem laudantium quasi vero consequatur quaerat nulla officiis
+              quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident earum deserunt rerum dignissimos voluptas unde explicabo
+              tempore sint aliquam ut, quis voluptatem fuga quas, dolorum
+              expedita nihil officia. Dicta, laboriosam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card second">
+        <div class="card-img"></div>
+        <div class="card-text">
+          <h2>Lorem Ipsum</h2>
+          <div class="p">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illo,
+              rerum earum, at consectetur reprehenderit temporibus tempore velit
+              adipisci modi eveniet dolorem laudantium quasi vero consequatur
+              quaerat nulla officiis quas. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Provident earum deserunt rerum
+              dignissimos voluptas unde explicabo tempore sint aliquam ut, quis
+              voluptatem fuga quas, dolorum expedita nihil officia. Dicta,
+              laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. In illo, rerum earum, at consectetur reprehenderit
+              temporibus tempore velit adipisci modi eveniet dolorem laudantium
+              quasi vero consequatur quaerat nulla officiis quas. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Provident earum
+              deserunt rerum dignissimos voluptas unde explicabo tempore sint
+              aliquam ut, quis voluptatem fuga quas, dolorum expedita nihil
+              officia. Dicta, laboriosam! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. In illo, rerum earum, at consectetur
+              reprehenderit temporibus tempore velit adipisci modi eveniet
+              dolorem laudantium quasi vero consequatur quaerat nulla officiis
+              quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident earum deserunt rerum dignissimos voluptas unde explicabo
+              tempore sint aliquam ut, quis voluptatem fuga quas, dolorum
+              expedita nihil officia. Dicta, laboriosam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card third">
+        <div class="card-img"></div>
+        <div class="card-text">
+          <h2>Lorem Ipsum</h2>
+          <div class="p">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illo,
+              rerum earum, at consectetur reprehenderit temporibus tempore velit
+              adipisci modi eveniet dolorem laudantium quasi vero consequatur
+              quaerat nulla officiis quas. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Provident earum deserunt rerum
+              dignissimos voluptas unde explicabo tempore sint aliquam ut, quis
+              voluptatem fuga quas, dolorum expedita nihil officia. Dicta,
+              laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. In illo, rerum earum, at consectetur reprehenderit
+              temporibus tempore velit adipisci modi eveniet dolorem laudantium
+              quasi vero consequatur quaerat nulla officiis quas. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Provident earum
+              deserunt rerum dignissimos voluptas unde explicabo tempore sint
+              aliquam ut, quis voluptatem fuga quas, dolorum expedita nihil
+              officia. Dicta, laboriosam! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. In illo, rerum earum, at consectetur
+              reprehenderit temporibus tempore velit adipisci modi eveniet
+              dolorem laudantium quasi vero consequatur quaerat nulla officiis
+              quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident earum deserunt rerum dignissimos voluptas unde explicabo
+              tempore sint aliquam ut, quis voluptatem fuga quas, dolorum
+              expedita nihil officia. Dicta, laboriosam!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery second">
+      <div class="gallery-content">
+        <div class="gallery-card first"></div>
+        <div class="gallery-card second">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            error autem ab eligendi aliquam laborum ipsum molestias. Facilis
+            voluptatem, similique est, nam porro iusto distinctio, iste impedit
+            voluptatibus nobis non.
+          </p>
+        </div>
+        <div class="gallery-card third">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            error autem ab eligendi aliquam laborum ipsum molestias. Facilis
+            voluptatem, similique est, nam porro iusto distinctio, iste impedit
+            voluptatibus nobis non.
+          </p>
+        </div>
+        <div class="gallery-card fourth"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-title">
+        <h2>
+          The <br />
+          batman
+        </h2>
+      </div>
+      <div class="footer-logo" onclick="trocarSessao('hero')"></div>
+      <div class="footer-links">
+        <ul>
+          <li class="git-hub"></li>
+          <li class="linkedin"></li>
+          <li class="instagram"></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
+<script>
+  let iconBack = document.querySelector(".icon-back");
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+    ) {
+      iconBack.style.display = "block";
+    } else {
+      iconBack.style.display = "none";
+    }
+  }
+
+  scrollFunction();
+
+  function trocarPagina(pagina, sessao) {
+    window.location = `${pagina}.html#${sessao}`;
+  }
+
+  function trocarSessao(sessao) {
+    sessao = document.getElementById(sessao);
+    sessao.scrollIntoView({ behavior: "smooth" });
+  }
+</script>

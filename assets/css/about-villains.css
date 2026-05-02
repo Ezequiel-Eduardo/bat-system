@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #ee041e transparent;
 }
 
 html,

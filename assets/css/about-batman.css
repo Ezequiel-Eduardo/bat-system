@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: #c4c4c4;
+  scrollbar-width: thin;
+  scrollbar-color: #ee041e #0a0a0a;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Open Sans";
+  background-color: black;
+}
+
+.icon-back {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 125px;
+  height: 30px;
+  background-image: url("../img/bat-symbol.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/riddler-mark.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 85%;
+  height: 20vh;
+  margin: 0 auto;
+  padding-top: 25px;
+  border-bottom: 2px solid #ee041e;
+}
+
+.navbar-logo {
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.navbar-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links li {
+  color: #ee041e;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.hero-title,
+.hero-subtitle {
+  color: #fff;
+  letter-spacing: 20%;
+}
+
+.hero-title {
+  font-size: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300vh;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 65vh;
+}
+
+.card-img {
+  width: 65%;
+  height: 100%;
+  border: 2px solid #ee041e;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 60%;
+  text-align: justify;
+  border-left: 5px solid #ee041e;
+}
+
+.p {
+  height: 80%;
+  margin-top: 15px;
+  padding: 0 25px;
+}
+
+.card.first .card-img {
+  background-image: url("https://images.wallpapersden.com/image/download/the-batman-aesthetic-movie-minimal_bWdmamqUmZqaraWkpJRqZWVlrWxpbms.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card.second .card-img {
+  background-image: url("https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/8e89ae6e-988b-11ec-aa6e-9587410378a2/the-batman-critica.jpg");
+  background-position: right;
+  background-size: cover;
+}
+
+.card.third .card-img {
+  background-image: url("https://consequence.net/wp-content/uploads/2022/01/batman-robert-pattinson-bruce-wayne-kurt-cobain.jpg?quality=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.card.second {
+  flex-direction: row-reverse;
+}
+
+.card.second .card-text {
+  border: none;
+  border-right: 5px solid #ee041e;
+  padding: 0;
+}
+
+.card.second .p {
+  direction: rtl;
+}
+
+.card.second .p p {
+  direction: ltr;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 100%;
+}
+
+.gallery-card {
+  width: 50%;
+  height: 50%;
+  border: 1px solid #ee041e;
+}
+
+.gallery-card.first,
+.gallery-card.fourth {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-card.second,
+.gallery-card.third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-card.second p,
+.gallery-card.third p {
+  margin-top: 15px;
+  width: 80%;
+}
+
+.gallery-card.first {
+  background-image: url("https://cinepop.com.br/wp-content/uploads/2022/03/The-Batman0-1024x576.png");
+}
+
+.gallery-card.fourth {
+  background-image: url("https://www.einerd.com/wp-content/uploads/2017/10/Terr%C3%ADvel-segredo-de-Batman-pode-mudar-sua-vida-para-sempre.jpg");
+}
+
+.cards.second .card.first .card-img {
+  background-image: url("https://i0.wp.com/tapipocando.com.br/wp-content/uploads/2026/01/The-Batman-Part-2-confirma-ausencia-de-personagem-chave-no-elenco-featured.jpg?fit=3840%2C2160&ssl=1");
+  background-position: center;
+}
+
+.cards.second .card.second .card-img {
+  background-image: url("https://preview.redd.it/a-detail-of-the-film-that-i-have-hardly-seen-anyone-mention-v0-e06pvta2raze1.jpeg?width=640&crop=smart&auto=webp&s=f46184b67c54f1412fc12c588b146074eadcb50a");
+  background-position: center;
+}
+
+.cards.second .card.third .card-img {
+  background-image: url("https://culturapoprigor.com.br/wp-content/uploads/2026/02/SaveClip.App_624490744_18360677899161333_1959155084041292992_n-e1771962101333-1024x636.jpg");
+}
+
+.gallery.second .gallery-card.first {
+  background-image: url("https://i.redd.it/this-sub-the-pattinson-suit-looks-terrible-me-v0-2ajserp3dp6c1.jpg?width=3840&format=pjpg&auto=webp&s=4954177bb3f3e3232879a62183e87e0001dc990f");
+}
+
+.gallery.second .gallery-card.fourth {
+  background-image: url("https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Flego-batman%2FEGS_WB_LEGO_Batman_G1_1920x1080_19_0911-1920x1080-e166b698acbbbcdae1ff306198684d143828467c.jpg");
+}
+
+.footer {
+  padding: 10px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  border-top: 2px solid #ee041e;
+}
+
+.footer-title h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #c4c4c4;
+}
+
+.footer-links {
+  height: 100%;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.footer-logo {
+  margin-left: -100px;
+  width: 400px;
+  height: 100px;
+  background-image: url("../img/bat-symbol.png");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.git-hub,
+.linkedin,
+.instagram {
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.git-hub {
+  width: 42px;
+  height: 42px;
+  background-image: url("../img/github.png");
+}
+
+.linkedin {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/linkedin.png");
+}
+
+.instagram {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/instagram.png");
+}
+
+.instagram:hover {
+  background-image: url("../img/instagram-hover.png");
+}
+
+.git-hub:hover {
+  background-image: url("../img/github-hover.png");
+}
+
+.linkedin:hover {
+  background-image: url("../img/linkedin-hover.png");
+}
