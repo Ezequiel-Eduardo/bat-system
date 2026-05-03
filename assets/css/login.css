@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #ee041e transparent;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Open Sans";
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c4c4c4;
+}
+
+input,
+button {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+}
+
+input {
+  padding: 10px 20px;
+  background-color: #282828;
+}
+
+input:focus {
+  outline: 2px solid #ee041e;
+}
+
+#input_login {
+  margin-bottom: 25px;
+}
+
+button {
+  margin-top: 25px;
+  background-color: #ee041e;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b10216;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  width: 35vw;
+  height: 100vh;
+  border-top-right-radius: 40px;
+  border-end-end-radius: 40px;
+  background-image: url("https://images.hdqwalls.com/download/the-batman-red-theme-me-1280x2120.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 65vw;
+  height: 100vh;
+}
+
+.title,
+.subtitle,
+.register,
+button {
+  letter-spacing: 20%;
+  text-transform: uppercase;
+}
+
+.title,
+a {
+  color: #ee041e;
+}
+
+.subtitle,
+.register {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 25px;
+}
+
+.input,
+.button {
+  width: 50%;
+}
