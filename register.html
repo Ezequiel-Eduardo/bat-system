@@ -1,11 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Olá mundo!</h1>
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body>
+    <div class="icon-back second" onclick="trocarPagina('index')"></div>
+    <div class="container second">
+      <div class="banner second"></div>
+      <div class="form">
+        <div>
+          <div class="title">
+            <h1>Cadastro</h1>
+          </div>
+          <div class="subtitle">
+            <h2>juntar-se à fámilia</h2>
+          </div>
+        </div>
+        <div class="input second">
+          <input type="text" id="input_nome" placeholder="Nome" />
+          <input type="email" id="input_email" placeholder="Email" />
+        </div>
+        <div class="input third">
+          <input type="text" id="input_senha" placeholder="Senha" />
+          <input
+            type="email"
+            id="input_confirmar_senha"
+            placeholder="Confirmar Senha"
+          />
+          <input
+            type="email"
+            id="input_codigo"
+            placeholder="Código da Fámilia"
+          />
+        </div>
+        <div class="button">
+          <button>Cadastrar</button>
+        </div>
+        <div class="register">
+          <h3>
+            já Faz parte da fámilia?
+            <span><a href="login.html">Fazer login</a></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

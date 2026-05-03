@@ -68,8 +68,8 @@ button:hover {
   height: 100vh;
   border-top-right-radius: 40px;
   border-end-end-radius: 40px;
-  background-image: url("https://images.hdqwalls.com/download/the-batman-red-theme-me-1280x2120.jpg");
-  background-position: top;
+  background-image: url("https://i.pinimg.com/736x/a6/e8/c0/a6e8c0775936f1651cb5e9e3e38e6fb9.jpg");
+  background-position: center;
   background-size: cover;
 }
 
@@ -108,9 +108,33 @@ a {
 
 .subtitle {
   margin-top: 25px;
+  text-align: center;
 }
 
 .input,
 .button {
   width: 50%;
+}
+
+.container.second {
+  flex-direction: row-reverse;
+  border-radius: 0;
+}
+
+.banner.second {
+  border-radius: 0;
+  border-start-start-radius: 40px;
+  border-end-start-radius: 40px;
+  background-image: url("../img/the-core-bat-family-is-surprisingly-consistent-in-many-v0-7k0h8zu1f8hc1.webp");
+}
+
+.input.second {
+  display: flex;
+  gap: 25px;
+}
+
+.input.third {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
