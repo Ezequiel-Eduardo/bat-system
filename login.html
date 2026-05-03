@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="icon" href="assets/img/the-batman-logo.png" type="image/png" />
   </head>
   <body>
+    <div class="icon-back" onclick="trocarSessao('hero')"></div>
     <div class="container">
       <div class="banner"></div>
       <div class="form">
@@ -35,3 +37,8 @@
     </div>
   </body>
 </html>
+<script>
+  function trocarPagina(pagina) {
+    window.location = `${pagina}.html#hero`;
+  }
+</script>
